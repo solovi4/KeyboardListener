@@ -1,0 +1,15 @@
+﻿<Window x:Class="KeyboardListener.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeyboardListener"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="100" Margin="196,148,0,0" VerticalAlignment="Top" Width="459">
+            <Button Content="Button" Canvas.Left="251" Canvas.Top="21" Width="75" Height="58" VerticalAlignment="Top" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Padding="1"/>
+        </Canvas>
+
+    </Grid>
+</Window>
