@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KeyboardListener"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
 
     <Window.Resources>
         <ResourceDictionary Source="ButtonStyles.xaml" />
     </Window.Resources>
 
-        <Grid>
-        <Button Content="+" Margin="10,0,407,10" Click="Button_Click" FontSize="48" Height="72" VerticalAlignment="Bottom" BorderBrush="#FFD16D6D" Foreground="Black" OpacityMask="#FF5F2121" Background="#FF8B76C5"/>
+    <Grid>
+        <Button Content="+" Margin="10,0,89,10" Click="Button_Click" FontSize="48" Height="72" VerticalAlignment="Bottom" BorderBrush="#FFD16D6D" Foreground="Black" OpacityMask="#FF5F2121" Background="#FF8B76C5"/>
         <ScrollViewer Margin="10,10,10,87">
             <StackPanel x:Name="KeysBindingStackPanel" Height="243" VerticalAlignment="Top" ScrollViewer.CanContentScroll="True">
                 <StackPanel.Background>
@@ -24,6 +24,10 @@
                 </StackPanel.Background>
             </StackPanel>
         </ScrollViewer>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="550,380,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="" Margin="708,337,10,10" MouseEnter="Button_MouseEnter" Click="Button_Save_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Resources/Floppy.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
