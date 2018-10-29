@@ -27,25 +27,36 @@ namespace KeyboardListener
 
         private Canvas GetOneKeyBindCanvas()
         {
-            int heightButton = 75;
+
+            ComboBox comboBox = new ComboBox
+            {
+                Width = 100              
+                
+            };
+            comboBox.Items.Add("VolumeUp");
+            comboBox.Items.Add("VolumeDown");
+
+
+            
             Button button = new Button
             {
-                Height = heightButton,
+                Height = 75,
                 Width = 75,
                 //HorizontalAlignment = HorizontalAlignment.Right,
-                Margin = new Thickness(0, 0, 0, 0)
+                Margin = new Thickness(comboBox.Width, 0, 0, 0),
+                Style = this.FindResource("RemoveButton") as Style
+                
             };
+            
+          
 
             Canvas canvas = new Canvas
             {
                 Background = new SolidColorBrush(Colors.Azure),
                 Height = button.Height
             };
-            canvas.Children.Add(new TextBox
-            {
-                Height = 80,
-                Width = 80
-            }); 
+
+            canvas.Children.Add(comboBox);
             canvas.Children.Add(button);
             
             return canvas;

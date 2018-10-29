@@ -6,8 +6,13 @@
         xmlns:local="clr-namespace:KeyboardListener"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="+" Margin="10,0,10,10" Click="Button_Click" FontSize="48" Height="72" VerticalAlignment="Bottom"/>
+
+    <Window.Resources>
+        <ResourceDictionary Source="ButtonStyles.xaml" />
+    </Window.Resources>
+
+        <Grid>
+        <Button Content="+" Margin="10,0,407,10" Click="Button_Click" FontSize="48" Height="72" VerticalAlignment="Bottom" BorderBrush="#FFD16D6D" Foreground="Black" OpacityMask="#FF5F2121" Background="#FF8B76C5"/>
         <ScrollViewer Margin="10,10,10,87">
             <StackPanel x:Name="KeysBindingStackPanel" Height="243" VerticalAlignment="Top" ScrollViewer.CanContentScroll="True">
                 <StackPanel.Background>
@@ -19,5 +24,6 @@
                 </StackPanel.Background>
             </StackPanel>
         </ScrollViewer>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="550,380,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>
