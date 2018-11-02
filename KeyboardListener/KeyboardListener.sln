@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyboardListener", "KeyboardListener.csproj", "{44F3375D-C34C-426A-93C9-1DC85899C71B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyboardListenerConfig", "KeyboardListenerConfig.csproj", "{44F3375D-C34C-426A-93C9-1DC85899C71B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyboardListenerServicePrj", "..\KeyboardListenerService\KeyboardListenerServicePrj.csproj", "{96FC2BBD-A6AC-4FB9-9D70-46A98E725500}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyboardListenerTestService", "KeyboardListenerTestService\KeyboardListenerTestService.csproj", "{101CE6A2-9A33-441C-9869-56A85B94D952}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{44F3375D-C34C-426A-93C9-1DC85899C71B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44F3375D-C34C-426A-93C9-1DC85899C71B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44F3375D-C34C-426A-93C9-1DC85899C71B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96FC2BBD-A6AC-4FB9-9D70-46A98E725500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96FC2BBD-A6AC-4FB9-9D70-46A98E725500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96FC2BBD-A6AC-4FB9-9D70-46A98E725500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96FC2BBD-A6AC-4FB9-9D70-46A98E725500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{101CE6A2-9A33-441C-9869-56A85B94D952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101CE6A2-9A33-441C-9869-56A85B94D952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101CE6A2-9A33-441C-9869-56A85B94D952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101CE6A2-9A33-441C-9869-56A85B94D952}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

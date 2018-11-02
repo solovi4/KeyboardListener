@@ -1,6 +1,6 @@
-﻿namespace KeyboardListenerService
+﻿namespace KeyboardListenerServicePrj
 {
-    partial class Service1
+    partial class KeyboardListenerService
     {
         /// <summary> 
         /// Required designer variable.

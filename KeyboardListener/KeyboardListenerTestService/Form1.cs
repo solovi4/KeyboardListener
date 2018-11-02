@@ -12,9 +12,21 @@ namespace KeyboardListenerTestService
 {
     public partial class Form1 : Form
     {
+        private ServiceTester serviceTester;
         public Form1()
         {
             InitializeComponent();
+            serviceTester = new ServiceTester();
+        }
+
+        private void buttonStart_Click(object sender, EventArgs e)
+        {
+            serviceTester.StartTest(null);
+        }
+
+        private void buttonStop_Click(object sender, EventArgs e)
+        {
+            serviceTester.StopTest();
         }
     }
 }

@@ -5,7 +5,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KeyboardListenerService
+namespace KeyboardListenerServicePrj
 {
     static class Program
     {
@@ -17,7 +17,7 @@ namespace KeyboardListenerService
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Service1()
+                new KeyboardListenerService()
             };
             ServiceBase.Run(ServicesToRun);
         }
